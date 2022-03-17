@@ -4,11 +4,63 @@
   
     
     <entry>
+      <title>javaScript</title>
+      <link href="/2022/03/17/javaScript/"/>
+      <url>/2022/03/17/javaScript/</url>
+      
+        <content type="html"><![CDATA[<p>JavaScript的内部对象<br>Date对象</p><blockquote><p>Date中的方法<br>getDate  返回一个月中的某一天(1<del>31)<br>getDay  返回一周中的某一天(0</del>6)，0为周日，1为周一，以此类推<br>getFullYear  以四位数返回年份<br>getHours  返回小时( 0<del>23 )<br>getMinutes. 返回分钟（0</del>59 )<br>getSeconds 返回秒数（0<del>59 )<br>getMonth 返回月份(0</del>11)，0为一月，1为二月，以此类推<br>getTime 返回1970年1月1日至今的毫秒数</p></blockquote><p>说明:每个Date实例对象都只是计算机的一个毫秒级快照，换言之，Date对象只是保存了它被创建时的时间信息，如果希望<br>总是显示当前最新时间，就需要不停地获取时间快照。</p><p>Math对象<br>·使用Math对象可以进行更多的高级运算，比如∶平方根、三角函数、对数和随机数等<br>Math.abs(number) 返回number的绝对值<br>Math.ceil(number) 对number向上取整，如Math.ceil(67.6)返回值是68<br>Math.floor(number)对number向下取整，如Math.ceil(67.6)返回值是67<br>Math.max(number1,number2)返回number1与number2中的较大值<br>Math.min(number1,number2)返回number1与number2中的较小值<br>Math.random（）返回0和1之间的伪随机数，可能为0，但总是小于1，[0,1)<br>Math.round(number)返回最接近number的整数<br>Math.sqrt(number)number的平方根</p><p>String对象<br>String对象常用的方法<br>·String对象中的方法主要用于搜索字符串中的字符、转换字符的大小写、分割字符串以及截取子字符串‘</p><p>charAT 返回字符串对象中指定索引处的字符，索引从0开始<br>indexOf 返回某个子字符串在目标字符串中首次出现的位置<br>substr 从指定索引位置开始截取指定长度的字符串<br>substring 返回指定索引范围内的字符串<br>toLowerCase 把字符串转化为小写<br>toUpperCase 把字符串转化为大写<br>split 返回按照指定分隔符拆分的若干子字符串数组</p><p>JavaScript字符串<br>常用的字符串方法</p><p>toLowerCase. toUpperCase 转小写、转大写<br>indexOf 查找字符串，返回索引值<br>substring 返回被操作字符串的一个子字符串<br>substr 返回被操作字符串的一个子字符串<br>split 将字符串按照指定的分割符分割成数组<br>trim 清空空格<br>match 查找指定的值，返回匹配的值<br>search 检索字符串首次出现的位置<br>replace 替换指定字符</p><p>数组赋值</p><p>创建数组的同时直接赋值<br>·第一种方法，创建数组的同时赋值∶<br>var num &#x3D; new Array(66,80,90,77,49)<br>·第二种方法，直接输入一个数组:<br>var num &#x3D; [66,80,90,77,49];<br>·注意:数组存储的数据可以是任何类型的，比如: var str &#x3D; newArray(“aaa”,”bbb”,”ccc”);</p><p>数组中的常用方法<br>·数组是Object类型，所有数组具有属性和方法<br>属性<br>length 设置或返回数组中元素的数目<br>方法<br>push() 将新元素添加到一个数组的尾部，并返回数组的新长度值<br>pop()  移除数组中的最后一个元素并返回该元素<br>sort() 对数组排序<br>reverse() 对数组进行反转(注意:不是倒序）<br>concat() 返回一个新数组，这个新数组是由多个数组组合而成的<br>join() 把数组的所有元素放入一个字符串中，通过一个的分隔符进行分隔<br>split() 将一个字符串分割成一个数组</p><p>JavaScript DOM操作<br>节点的访问<br>1.访问指定元素:<br>.一个元素对象可以拥有元素节点、文本节点、子节点或其它类型的节点<br>·访问指定节点的常用方法如下:<br>访问指定节点<br>getElementByld() 获取拥有指定ID的第一个元素对象的引用<br>getElementsByTagName() 获取带有指定标签名的元素对象集合<br>getElementsByName() 获取带有指定名称的元素对象集合<br>getElementsByClassName() 获取指定class的元素对象集合(不支持IE6~8浏览器)</p><p>2.访问相关元素:<br>·引用完成一个页面元素对象后，可以使用DOM节点对象的parentNode.childNodes、 firstChild、lastChild.<br>previousSibling或nextSibling属性访问相对于该页面元素的父、子或兄弟元素<br>·访问指定节点的常用方法如下:<br>parentNode 元素节点的父节点<br>childNodes元素节点的子节点数组<br>firstChild第一个子节点<br>lastChild最后一个子节点<br>previousSibling前一个兄弟节点<br>nextSibling后一个兄弟节点</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux权限设置</title>
+      <link href="/2022/03/17/Linux%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE/"/>
+      <url>/2022/03/17/Linux%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<p>文件权限<br>·输入命令ls -l，可以查看文件的权限，如:-rWxr-xr-X<br>[root@localhost ~]# ls -l</p><p>·每个文件针对每类访问者定义了三种主要权限，其中，第一位:代表文件类型，后面每3位代表一组权限，分别是∶所有者、所属组和其他人<br><img src="/Linux%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE_files/1.jpg"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vim的使用</title>
+      <link href="/2022/03/17/vim%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+      <url>/2022/03/17/vim%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/vim%E7%9A%84%E4%BD%BF%E7%94%A8_files/2.jpg"><br>VI&#x2F;VIM共有三种编辑模式，分别是∶命令模式(Command mode )、输入模式 ( Insert mode )和底线命令模式( Last line mode ) .<br>输入模式∶<br>在命令模式下按下i就进入输入模式。在输入模式中，可以用以下按钮:<br>字符按键及Shift组合:输入字符<br>ENTER:回车键，换行<br>BACK SPACE:退格键，删除光标前一个字符<br>DEL:删除键，删除光标后一个字符<br>方向键:在文本中移动光标<br>HOME&#x2F;END:移动光标到行首&#x2F;行尾<br>Page Up&#x2F;Page Down :上&#x2F;下翻页<br>Insert:切换逛遍为输入&#x2F;替换模式<br>ESC:退出输入模式，切换到命令模式</p><p>一般模式下搜索替换指令说明:<br>搜索替换指令<br>&#x2F;word 向光标之下寻找一个名称为word 的字符串。(常用)<br>?word 向光标之上寻找一个字符串名称为word 的字符串。<br>n 这个n是英文按键。代表重复前一个搜寻的动作。<br>N 这个N是英文按键。与n刚好相反，为『反向』进行前一个搜寻动作<br>:n1,n2s&#x2F;word1&#x2F;word2&#x2F;g或:%s&#x2F;word1&#x2F;word2&#x2F;gc n1与n2为数字。在第n1与n2行之间寻找word1这个字符串，并将该字符串取代为word2（常用)</p><p>一般模式下删除、复制与粘贴常用方法说明:<br>删除、复制与粘贴方法作用</p><p>x, X 在一行字当中，x为向后删除一个字符(相当于[dcl]按键)，X为向前删除一个字符(相当于[backspace]亦即是退格键)(常用)<br>dd 删除游标所在的那一整行(常用)<br>ndd n为数字。删除光标所在的向下n行，例如20dd 则是删除20行(常用)<br>yy 复制游标所在的那一行(常用)<br>nyy n为数字。复制光标所在的向下n行，例如20yy则是复制20行(常用)<br>p,P p为将已复制的数据在光标下一行贴上，P则为贴在游标上一行!<br>u 复原前一个动作。(常用)<br>[CtrI]+r 重做上一个动作。(常用)<br>. 不要怀疑!这就是小数点!意思是重复前一个动作的意思。如果你想要重复删除、重复贴上等等动作，按下小数点『.J就好了!(常用)</p><p>一般模式切换到编辑模式的方法说明:<br>进入输入和取代模式方法作用<br>i, I 进入输入模式(Insert mode):i为『从目前光标所在处输入』，I为『在目前所在行的第一个非空格符处开始输入』.(常用)<br>a,A  进入输入模式(Insert mode):a为『从目前光标所在的下一个字符处开始输入』，A为『从光标所在行的最后一个宁符处开始输入。(常用)<br>o,O  进入输入模式(Insert mode) : 这是英文字母o的大小写。o为『在目前光标所在的下一行处输入新的一行』﹔O为在目前光标所在处的上一行输入新的一行!(常用)<br>r,R  讲入取代模式(Replace mode):r只会取代光标所在的那一个字符一次;R会一直取代光标所在的文字，直到按下ESC为止;(常用)<br>[Esc] 退出编辑模式，回到一般模式中(常用)</p><p>一般模式切换到指令行模式的指令说明及VIM环境变更指令说明:<br>指令行的存储、离开指令</p><p>:w 将编辑的数据写入硬盘档案中(常用)<br>:w! 若文件属性为『只读』时，强制写入该档案。不过，到底能不能写入，还是跟你对该档案的档案权限有关啊!<br>:q 离开vi(常用)<br>:q! 若曾修改过档案，又不想储存，使用!为强制离开不储存档案。<br>:wq 储存后离开，若为:wg! 则为强制储存后离开(常用)<br>:n1,n2 w [filename] 将n1到n2的内容储存成filename这个档案。<br>:! command 暂时离开vi到指令行模式下执行command的显示结果。</p><p>VIM环境的变更<br>:set nu 显示行号，设定之后，会在每一行的前缀显示该行的行号<br>:set nonu 与set nu相反，为取消行号!</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux常用命令</title>
+      <link href="/2022/03/17/text4/"/>
+      <url>/2022/03/17/text4/</url>
+      
+        <content type="html"><![CDATA[<p>内容查找命令:grep命令是global regular expressions print缩写，grep命令是用来在每一个文件或中（或特定输出上)搜索特定的模式，当使用grep时，包含指定字符模式的每一行内容，都会被打印(显示）到屏幕上，但是使用grep命令并不改变文件中的内容。</p><p>基本格式如下∶[root@localhost ~]# grep[选页模式文件名</p><p>注意基本格式中的模式要么是字符(串），要么是正则表达式。<br>-c:仅列出文件中包含模式的行数。<br>-i:忽略模式中的字母大小写。<br>-l:列出带有匹配行的文件名。<br>-n:在每一行的最前面列出行号。<br>-v:列出没有匹配模式的行。<br>-w:把表达式当做一个完整的单字符来搜寻，忽略那些部分匹配的行。<br>注意:如果是搜索多个文件，grep命令的搜索结果只显示文件中发现匹配模式的文件名;而如果搜索单个文件，grep命令的结果将显示每一个包含匹配模式的行。有兴趣的同学可以学习一下另外两个命令:sed命令和awk命令.</p><p>解压缩命令:unzip命令可以查看和解压缩zip文件。<br>基本格式如下:[root@localhost ~]# unzip[选项]压缩包名</p><p>-d 目录名:将压缩文件解压到指定目录下。<br>-n:解压时并不覆盖已经存在的文件。<br>-o:解压时覆盖已经存在的文件，并且无需用户确认。<br>-v:查看压缩文件的详细信息，包括压缩文件中包含的文件大小、文件名以及压缩比等，但并不做解压操作<br>-t:测试压缩文件有无损坏，但并不解压。<br>-x 文件列表：解压文件，但不包含文件列表中指定的文件。<br>-d 目录名：将压缩文件解压到指定目录下。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>目录管理</title>
       <link href="/2022/03/16/test3/"/>
       <url>/2022/03/16/test3/</url>
       
-        <content type="html"><![CDATA[<p>&#x2F;bin:bin是Binary的缩写，这个目录放最常用的命令。<br>&#x2F;boot：存放的是Linux的核心文件，包括链接文件和镜像文件。<br>&#x2F;dev：dev是Device的缩写，该目录存放的是Linux的外部设备。<br>&#x2F;etc：存放所有的系统管理所需要的配置文件的子目录。<br>&#x2F;home：用户的主目录，一般目录名由用户的账号命名。<br>&#x2F;lib：存放着系统最基本的动态链接共享库，类似Windows里的DLL文件。<br>&#x2F;media：Linux系统会自动识别一些外部设备如优盘光驱等等，识别后会把识别的设备挂载到此目录下。<br>&#x2F;mnt：<br>&#x2F;opt<br>&#x2F;root<br>&#x2F;sbin<br>&#x2F;srv<br>&#x2F;tmp</p>]]></content>
+        <content type="html"><![CDATA[<p>&#x2F;bin:bin是Binary的缩写，这个目录放最常用的命令。<br>&#x2F;boot：存放的是Linux的核心文件，包括链接文件和镜像文件。<br>&#x2F;dev：dev是Device的缩写，该目录存放的是Linux的外部设备。<br>&#x2F;etc：存放所有的系统管理所需要的配置文件的子目录。<br>&#x2F;home：用户的主目录，一般目录名由用户的账号命名。<br>&#x2F;lib：存放着系统最基本的动态链接共享库，类似Windows里的DLL文件。<br>&#x2F;media：Linux系统会自动识别一些外部设备如优盘光驱等等，识别后会把识别的设备挂载到此目录下。<br>&#x2F;mnt：系统提供该目录是为了让用户临时挂载别的文件系统的，我们可以将光驱挂载在&#x2F;mnt&#x2F;上，然后进入该目录就可以查看光驱里的内容了。<br>&#x2F;opt：这是给主机额外安装软件所设置的目录。比如你安装一个ORACLE数据库则就可以放到这个目录下。<br>&#x2F;root：该目录为系统管理员，也称作超级权限者的用户主目录。<br>&#x2F;sbin：s就是Super User的意思，这里存放的是系统管理员使用的系统管理程序。<br>&#x2F;srv：该目录存放一些服务启动之后需要提取的数据。<br>&#x2F;tmp：存放临时文件。</p><p>FHS针对根目录所定义的标准就仅限于上表，不过仍旧有些目录也需要我们了解一下，具体如下:<br>&#x2F;lost+found：这个目录是使用标准的ext2&#x2F;ext3档案系统格式才会产生的一个目录，这个目录一般情况下是空的，当系统非法关机后，这里就存放了一些文件。<br>&#x2F;sys:该目录下安装了2.6内核中新出现的一个文件系统sysfs , sysfs文件系统集成了下面3种文件系统的信息:针对进程信息的proc文件系统、针对设备的devfs文件系统以及针对伪终端的devpts文件系统。<br>&#x2F;selinux:这个目录是Redhat&#x2F;CentOS所特有的目录，Selinux是一个安全机制，类似于windows的防火墙，但是这套机制比较复杂，这个目录就是存放selinux相关的文件的。</p><p>除了这些目录的内容之外，另外要注意的是∶因为根目录与开机有关，开机过程中仅有根目录会被挂载，其他分区则是在开机完成之后才会持续的进行挂载的行为。所以我们要了解那哪些目录不可与根目录分开:<br>&#x2F;etc:配置文件<br>&#x2F;bin :重要执行档<br>&#x2F;dev :所需要的装置文件<br>&#x2F;lib:执行档所需的函式库与核心所需的模块<br>&#x2F;sbin :重要的系统执行文</p>]]></content>
       
       
       

@@ -3,15 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2022/3 | 聚窟洲饿灵在线要饭</title>
+  <title>vim的使用 | 聚窟洲饿灵在线要饭</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="聚窟洲饿灵在线要饭">
-<meta property="og:url" content="http://example.com/archives/2022/03/index.html">
+  <meta name="description" content="VI&#x2F;VIM共有三种编辑模式，分别是∶命令模式(Command mode )、输入模式 ( Insert mode )和底线命令模式( Last line mode ) .输入模式∶在命令模式下按下i就进入输入模式。在输入模式中，可以用以下按钮:字符按键及Shift组合:输入字符ENTER:回车键，换行BACK SPACE:退格键，删除光标前一个字符DEL:删除键，删除光标后一个字符方向">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vim的使用">
+<meta property="og:url" content="http://example.com/2022/03/17/vim%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="聚窟洲饿灵在线要饭">
+<meta property="og:description" content="VI&#x2F;VIM共有三种编辑模式，分别是∶命令模式(Command mode )、输入模式 ( Insert mode )和底线命令模式( Last line mode ) .输入模式∶在命令模式下按下i就进入输入模式。在输入模式中，可以用以下按钮:字符按键及Shift组合:输入字符ENTER:回车键，换行BACK SPACE:退格键，删除光标前一个字符DEL:删除键，删除光标后一个字符方向">
 <meta property="og:locale">
+<meta property="og:image" content="http://example.com/vim%E7%9A%84%E4%BD%BF%E7%94%A8_files/2.jpg">
+<meta property="article:published_time" content="2022-03-17T08:19:06.000Z">
+<meta property="article:modified_time" content="2022-03-17T08:30:27.636Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/vim%E7%9A%84%E4%BD%BF%E7%94%A8_files/2.jpg">
   
     <link rel="alternative" href="/atom.xml" title="聚窟洲饿灵在线要饭" type="application/atom+xml">
   
@@ -37,8 +43,8 @@
           fancybox: true,
           animate: false,
           isHome: false,
-          isPost: false,
-          isArchive: true,
+          isPost: true,
+          isArchive: false,
           isTag: false,
           isCategory: false,
           open_in_new: false
@@ -291,212 +297,187 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-vim的使用" class="article article-type-post" itemscope itemprop="blogPost">
   
+    <div class="article-meta">
+      <a href="/2022/03/17/vim%E7%9A%84%E4%BD%BF%E7%94%A8/" class="article-date">
+      <time datetime="2022-03-17T08:19:06.000Z" itemprop="datePublished">2022-03-17</time>
+</a>
+    </div>
   
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      vim的使用
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><img src="/vim%E7%9A%84%E4%BD%BF%E7%94%A8_files/2.jpg"><br>VI&#x2F;VIM共有三种编辑模式，分别是∶命令模式(Command mode )、输入模式 ( Insert mode )和底线命令模式( Last line mode ) .<br>输入模式∶<br>在命令模式下按下i就进入输入模式。在输入模式中，可以用以下按钮:<br>字符按键及Shift组合:输入字符<br>ENTER:回车键，换行<br>BACK SPACE:退格键，删除光标前一个字符<br>DEL:删除键，删除光标后一个字符<br>方向键:在文本中移动光标<br>HOME&#x2F;END:移动光标到行首&#x2F;行尾<br>Page Up&#x2F;Page Down :上&#x2F;下翻页<br>Insert:切换逛遍为输入&#x2F;替换模式<br>ESC:退出输入模式，切换到命令模式</p>
+<p>一般模式下搜索替换指令说明:<br>搜索替换指令<br>&#x2F;word 向光标之下寻找一个名称为word 的字符串。(常用)<br>?word 向光标之上寻找一个字符串名称为word 的字符串。<br>n 这个n是英文按键。代表重复前一个搜寻的动作。<br>N 这个N是英文按键。与n刚好相反，为『反向』进行前一个搜寻动作<br>:n1,n2s&#x2F;word1&#x2F;word2&#x2F;g或:%s&#x2F;word1&#x2F;word2&#x2F;gc n1与n2为数字。在第n1与n2行之间寻找word1这个字符串，并将该字符串取代为word2（常用)</p>
+<p>一般模式下删除、复制与粘贴常用方法说明:<br>删除、复制与粘贴方法作用</p>
+<p>x, X 在一行字当中，x为向后删除一个字符(相当于[dcl]按键)，X为向前删除一个字符(相当于[backspace]亦即是退格键)(常用)<br>dd 删除游标所在的那一整行(常用)<br>ndd n为数字。删除光标所在的向下n行，例如20dd 则是删除20行(常用)<br>yy 复制游标所在的那一行(常用)<br>nyy n为数字。复制光标所在的向下n行，例如20yy则是复制20行(常用)<br>p,P p为将已复制的数据在光标下一行贴上，P则为贴在游标上一行!<br>u 复原前一个动作。(常用)<br>[CtrI]+r 重做上一个动作。(常用)<br>. 不要怀疑!这就是小数点!意思是重复前一个动作的意思。如果你想要重复删除、重复贴上等等动作，按下小数点『.J就好了!(常用)</p>
+<p>一般模式切换到编辑模式的方法说明:<br>进入输入和取代模式方法作用<br>i, I 进入输入模式(Insert mode):i为『从目前光标所在处输入』，I为『在目前所在行的第一个非空格符处开始输入』.(常用)<br>a,A  进入输入模式(Insert mode):a为『从目前光标所在的下一个字符处开始输入』，A为『从光标所在行的最后一个宁符处开始输入。(常用)<br>o,O  进入输入模式(Insert mode) : 这是英文字母o的大小写。o为『在目前光标所在的下一行处输入新的一行』﹔O为在目前光标所在处的上一行输入新的一行!(常用)<br>r,R  讲入取代模式(Replace mode):r只会取代光标所在的那一个字符一次;R会一直取代光标所在的文字，直到按下ESC为止;(常用)<br>[Esc] 退出编辑模式，回到一般模式中(常用)</p>
+<p>一般模式切换到指令行模式的指令说明及VIM环境变更指令说明:<br>指令行的存储、离开指令</p>
+<p>:w 将编辑的数据写入硬盘档案中(常用)<br>:w! 若文件属性为『只读』时，强制写入该档案。不过，到底能不能写入，还是跟你对该档案的档案权限有关啊!<br>:q 离开vi(常用)<br>:q! 若曾修改过档案，又不想储存，使用!为强制离开不储存档案。<br>:wq 储存后离开，若为:wg! 则为强制储存后离开(常用)<br>:n1,n2 w [filename] 将n1到n2的内容储存成filename这个档案。<br>:! command 暂时离开vi到指令行模式下执行command的显示结果。</p>
+<p>VIM环境的变更<br>:set nu 显示行号，设定之后，会在每一行的前缀显示该行的行号<br>:set nonu 与set nu相反，为取消行号!</p>
+
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
+    </div>
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2022/03/17/javaScript/" class="archive-article-date">
-      <time datetime="2022-03-17T08:32:23.000Z" itemprop="datePublished">03-17</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/03/17/javaScript/">javaScript</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2022/03/17/vim%E7%9A%84%E4%BD%BF%E7%94%A8/">vim的使用</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问  的个人博客"></a></p>
+        <p><span>发布时间:</span>2022年03月17日 - 16时19分</p>
+        <p><span>最后更新:</span>2022年03月17日 - 16时30分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2022/03/17/vim%E7%9A%84%E4%BD%BF%E7%94%A8/" title="vim的使用">http://example.com/2022/03/17/vim%E7%9A%84%E4%BD%BF%E7%94%A8/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://example.com/2022/03/17/vim%E7%9A%84%E4%BD%BF%E7%94%A8/　　作者: " title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2022/03/17/Linux%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Linux权限设置
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/03/17/text4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux常用命令</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2022/03/17/Linux%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE/" class="archive-article-date">
-      <time datetime="2022-03-17T08:30:46.000Z" itemprop="datePublished">03-17</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/03/17/Linux%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE/">Linux权限设置</a>
-    </h1>
-  
 
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2022/03/17/vim%E7%9A%84%E4%BD%BF%E7%94%A8/" class="archive-article-date">
-      <time datetime="2022-03-17T08:19:06.000Z" itemprop="datePublished">03-17</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/03/17/vim%E7%9A%84%E4%BD%BF%E7%94%A8/">vim的使用</a>
-    </h1>
-  
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
-        <div class="article-info info-on-archive">
-          
 
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2022/03/17/text4/" class="archive-article-date">
-      <time datetime="2022-03-17T08:13:46.000Z" itemprop="datePublished">03-17</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/03/17/text4/">Linux常用命令</a>
-    </h1>
-  
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
 
-        <div class="article-info info-on-archive">
-          
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
 
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2022/03/16/test3/" class="archive-article-date">
-      <time datetime="2022-03-16T05:02:41.000Z" itemprop="datePublished">03-16</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/03/16/test3/">目录管理</a>
-    </h1>
-  
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
 
-        <div class="article-info info-on-archive">
-          
 
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2022/03/16/text2/" class="archive-article-date">
-      <time datetime="2022-03-16T03:01:55.000Z" itemprop="datePublished">03-16</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/03/16/text2/">操作系统</a>
-    </h1>
-  
 
-        <div class="article-info info-on-archive">
-          
 
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2022/03/16/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A01/" class="archive-article-date">
-      <time datetime="2022-03-15T16:39:16.000Z" itemprop="datePublished">03-16</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/03/16/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A01/">网络安全法</a>
-    </h1>
-  
 
-        <div class="article-info info-on-archive">
-          
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+
+
 
     
 
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2022/03/17/Linux%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE/" title="上一篇: Linux权限设置">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2022/03/17/text4/" title="下一篇: Linux常用命令">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2022/03/17/javaScript/">javaScript</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/17/Linux%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE/">Linux权限设置</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/17/vim%E7%9A%84%E4%BD%BF%E7%94%A8/">vim的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/17/text4/">Linux常用命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/16/test3/">目录管理</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/16/text2/">操作系统</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/16/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A01/">网络安全法</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
@@ -565,17 +546,6 @@
         };
     })
 </script>
-
-    <button class="hide-labels">TAG 开关</button>
-    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js">
-    </script>
-    <script>
-        $(document).ready(function() {
-            $("button").click(function() {
-                $(".article-info").toggle(200);
-            });
-        });
-    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
