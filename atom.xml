@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-17T08:47:45.390Z</updated>
+  <updated>2022-03-18T07:04:45.374Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cookie</title>
+    <link href="http://example.com/2022/03/18/cookie/"/>
+    <id>http://example.com/2022/03/18/cookie/</id>
+    <published>2022-03-18T07:04:45.000Z</published>
+    <updated>2022-03-18T07:04:45.374Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>php</title>
+    <link href="http://example.com/2022/03/18/php/"/>
+    <id>http://example.com/2022/03/18/php/</id>
+    <published>2022-03-18T02:56:10.000Z</published>
+    <updated>2022-03-18T07:04:10.954Z</updated>
+    
+    <content type="html"><![CDATA[<p>PHP基础<br>PHP概述</p><blockquote><p>大小写敏感<br>。在PHP中，所有关键词（例如if、else、echo等等）和用户定义的函数名、类名均不区分大小写·但是变量名会对大小写敏感</p></blockquote><?php$color='red";echo 'My car is ' . $color . '<br>';echo 'My house is  . $COLOR '<br>';?><blockquote><p>变量规则<br>·变量以$符号开头，其后是变量的名称<br>·变量名称必须以字母或下划线开头，而不能以数字开头<br>·变量名称只能包含字母、数字和下划线(A-z、0-9以及_)<br>·变量名称区分大小写，建议用小写<br>. PHP没有创建变量的命令，变量会在首次为其赋值时自动被创建<br>·PHP是一门类型松散的语言，在为变量赋值时，不必声明变量的数据类型，PHP会自动把变量转换为相应的数据类型<br><?php$txt='Hello world!';$x=5;echo $txt;echo '<br/>';echo $x;?></p></blockquote><p>字符串( string )<br>·字符串要用单引号或双引号括住，字符串中可以包括html标记</p><?phpecho '学习PHP是一件快乐的事;echo ' <br/>学习PHP是一件快乐的事<br/>';?><p>·注意:<br>1.用单引号时，程序不会对字符串进行解析。如果字符串中包含变量，也只输出变量名，而不会输出变量值;<br>2．用双引号则会对字符串进行解析。如果字符串中包含变量，则会对变量进行解析而输出变量的值;<br>3.当一个字符串是纯文本组成的时候，尽量用单引号</p><p>PHP数据类型<br>整数(integer )<br>·如: $count &#x3D; 68<br>浮点数( float )<br>·浮点数是带小数点或指数形式的数字，如: $grade &#x3D; 84.5<br>布尔型( boolean )<br>·只有两个值TRUE 或 FALSE，不区分大小写，常用于条件测试，如: $Login &#x3D; TRUE<br>NULL值<br>.NULL值表示变量为空</p><?php$count = 68;$grade = 95.5;$Login = TRUE;$null = NULL;var. dump($count,$grade,$Login.$null);?><p>运算符<br>4．递增递减运算符<br>·递增递减运算符只能作用于变量<br>++$x 前递增                 $x加一递增，然后返回$x<br>$x++ 后递增  $x &#x3D; $x + 1 返回$x，然后$x加一递增<br>–$x 前递减                 $x减一递减，然后返回$x<br>$x– 后递减  $x &#x3D; $x - 1 返回$x，然后$x减一递减</p><p>5.比较运算符<br>. PHP比较运算符用于比较两个值(数字或字符串)</p><p>运算符</p><p>&#x3D;&#x3D;  等于                 $x &#x3D;&#x3D; $y        如果$x等于$y，则返回true<br>&#x3D;&#x3D;&#x3D; 全等于(完全相同） $x &#x3D;&#x3D;&#x3D; $y        如果$x等于$y，且类型相同，则返回true<br>!&#x3D;  不等于            $x !&#x3D; $y        如果$x不等于$y，则返回true<br>&lt;&gt;  不等于            $x &lt;&gt;$y            如果$x不等于$y，则返回true<br>!&#x3D;&#x3D; 不全等(完全不同)  $x !&#x3D;&#x3D; $y        如果 $x不等于$y，且类型不相同，则返回true</p><blockquote><p>  大于                $x &gt; $y            如果$x大于$y，则返回true<br>&lt;    小于                $x &lt; $y            如果$x小于$y，则返回true<br>&#x3D;  小于或等于        $x &gt;&#x3D; $y        如果$x大于或等于$y，则返回true<br>&lt;&#x3D;  大于或等于        $x &lt;&#x3D; $y        如果 $x小于或等于$y，则返回true</p></blockquote><p>数组排序<br>·数据排序是计算机科学中的核心问题，PHP也提供了很多对数组的排序函数<br>sort():以升序对数组排序<br>rsort():以降序对数组排序<br>ksort():根据键，以升序对关联数组进行排序<br>krsort():根据键，以降序对关联数组进行排序<br>asort():根据值，以升序对关联数组进行排序<br>arsort0:根据值，以降序对关联数组进行排序</p><p>变量函数库<br>empty        检查变量是否为空，为空返回TRUE,否则为FALSE        empty(变量)<br>gettype        获取变量的类型                                gettype(变量)<br>is_array    检查变量是否为数组类型                        is_array(变量)<br>isset        检查变量是否被设置或赋值                        isset(变量)<br>unset        释放给定变量，即销毁变量                        unset(变量)<br>var_dump    打印变量的相关信息                            var_dump(变量)</p><blockquote><p>字符串函数</p></blockquote><p>strlen        计算字符串长度                    strlen(变量名)<br>substr        截取字符串，采用起点一长度方式        substr(string源字符串,int start Lint length])<br>strstr        截取字符串，采用子串一结尾方式        strstr ( string原串, string标识)<br>explode        分割字符串，将字符串毁成数组        explode ( string separator, string string [ int limit])<br>trim        去掉左右空格                        trim(string字符串)<br>md5            计算字符串的MD5哈希(加密)            md5 ( string字符串)</p><blockquote><p>GET方法和POST方法的对比</p></blockquote><p>GET方式                                    GET方式</p><ol><li>get方式在url后面拼接参数                1,安全性较高<br>2．只能以文本的形式传递数据                2．传递数据量大，请求对数据长度没有要求</li></ol><p>3.传递的数据量小，4KB左右                    3.请求不会被缓存，也不会保留在浏览器历史记录中<br>4.安全性低，会将数据显示在地址栏<br>5.速度快，通常用于对安全性要求不高的请求</p><p>PHP接收数据</p><p>$_GET<br>·变量接受所有以get方式发送的请求，及浏览器地址栏中的?之后的内容<br>$_POST<br>·变量接受所有以post方式发送的请求<br>·例如，一个form 以 method&#x3D;post提交，提交后php 会处理post过来的全部变量<br>$_REQUEST<br>·支持两种方式发送过来的请求，即post和get它都可以接受</p><p>·支持两种方式发送过来的请求，即post和get它都可以接受<br>fopen()函数参数mode的可选值<br>r    以只读方式打开，如果文件不存在将出错<br>w    以写入方式打开，将文件指针指向文件头部，并删除文件内容，如果文件不存在则创建文件<br>a     以写入方式打开，将文件指针指向文件头部，并删除文件内容，如果文件不存在则创建文件<br>r+    以读写方式（先读后写)打开，将文件指针指向文件头部.<br>w+    以读写方式(先写后读)打开，将文件指针指向文件头部，并删除文件内容<br>a+    以追加读写方式打开，将文件指针指向文件末尾。<br>x    以只写方式创建并打开文件，并将文件指针指向文件头。如果指定文件存在，就会打开失败<br>x+    以读写方式创建并打开文件，并将文件指针指向文件头。如果指定文件存在，就会打开失败<br>b     以二进制模式打开，可与r..w.a合用</p><p>向留言板写内容<br>function writemessage$filename, Sres)<br>{fp &#x3D; fopen($filename, “a”);<br>&#x2F;&#x2F;在尾部执行追加写的操作<br>fwrite($fp, $res):&#x2F;r写入文件<br>fclose($fp):&#x2F;&#x2F;关闭文件<br>}<br>ifissetS_POST[‘submit]) {<br>Sres&#x3D;”[$S_POST[‘username’]–($_POST[ ‘title’]–<br>{$_POST(‘contentT[n]”;<br>writemessage(Sfilename, $res):1&#x2F;向文件写进内容<br>}</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;PHP基础&lt;br&gt;PHP概述&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;大小写敏感&lt;br&gt;。在PHP中，所有关键词（例如if、else、echo等等）和用户定义的函数名、类名均不区分大小写·但是变量名会对大小写敏感&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;?php
+$color</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>javaScript</title>
